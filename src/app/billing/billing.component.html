@@ -1,0 +1,64 @@
+ <nav style="margin:auto" class="navbar navbar-expand-1g bg-dark">
+    <a style="color: white;" class="navbar-brand" href="#">HEALTHCARE HOSPITALS</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupported">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbar SupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-1g-0">
+            <li class="nav-item">
+                <a style="color: white; " class="nav-link active" aria-current="page" href="javascript:void(0);"></a>
+            </li>
+        </ul>
+        
+    </div>
+</nav>
+
+<div class="container">
+    <h2>Billing Management</h2>
+  
+    <table class="table">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Patient ID</th>
+          <th>Amount</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let bill of bills">
+          <td>{{ bill.id }}</td>
+          <td>{{ bill.patientId }}</td>
+          <td>{{ bill.amount | currency }}</td>
+          <td>{{ bill.status }}</td>
+        </tr>
+      </tbody>
+    </table>
+  
+    <h3>Add New Bill</h3>
+    <form (submit)="addBill()">
+      <div class="form-group">
+        <label>Patient ID</label>
+        <input type="number" class="form-control" [(ngModel)]="newBill.patientId" name="patientId" required>
+      </div>
+  
+      <div class="form-group">
+        <label>Amount</label>
+        <input type="number" class="form-control" [(ngModel)]="newBill.amount" name="amount" required>
+      </div>
+  
+      <div class="form-group">
+        <label>Status</label>
+        <select class="form-control" [(ngModel)]="newBill.status" name="status">
+          <option value="Paid">Paid</option>
+          <option value="Unpaid">Unpaid</option>
+          <option value="Pending">Pending</option>
+        </select>
+      </div>
+  
+      <button class="btn btn-success mx-1" data-toggle="modal" data-target="#addBillModal">Add Bill</button>
+    </form>
+  </div>
+   
+
+   
