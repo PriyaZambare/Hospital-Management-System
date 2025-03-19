@@ -1,0 +1,111 @@
+/* 
+ button {
+    display: block;
+  }
+
+  .card{ 
+    border: none; 
+    border-radius: 30px; 
+    width: 500px; 
+    padding: 40px; 
+    top: 40%; 
+    left: 30%; 
+    transform: translate (30%, -25%); 
+    background: rgb(158, 219, 219); 
+    justify-content: center; 
+    color: navy; 
+    justify-items: center; 
+    box-shadow: 10px 10px 10px rgb(120, 120, 120);
+}
+.container{
+    justify-content: center;
+    display: flex;
+}  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Navigation Bar */
+.navbar {
+  width: 100%;
+  background-color: #333;
+  padding: 15px;
+  text-align: center;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Container */
+.container {
+  width: 80%;
+  margin: 30px auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+h2, h3 {
+  text-align: center;
+  color: #333;
+}
+
+/* Table Styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background-color: #444;
+  color: white;
+}
+
+/* Form Styles */
+.form-group {
+  margin: 15px 0;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input, select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Button Styles */
+.btn {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background-color: green;
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: darkgreen;
+}

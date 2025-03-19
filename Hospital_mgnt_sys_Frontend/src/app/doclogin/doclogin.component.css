@@ -1,0 +1,19 @@
+.card{ 
+    border: none; 
+    
+    width: 500px; 
+    padding: 40px; 
+    top: 10%; 
+
+    transform: translate (30%, -25%); 
+    background-color: #cfe8d5;
+    justify-content: center; 
+    color: navy; 
+    justify-items: center; 
+    
+}
+
+.container{
+    justify-content: center;
+    display: flex;
+}
